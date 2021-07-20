@@ -8,5 +8,5 @@ respon = bs4.BeautifulSoup(konten.text, "html.parser")
 cari_elemen = respon.find_all('tr', 'table_highlight')
 print(cari_elemen)
 
-sholat = {cari_elemen'td'}
-print(sholat)
+sholatt = {cari_elemen'td'}
+print(sholatt)
