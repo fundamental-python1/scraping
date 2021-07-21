@@ -10,7 +10,7 @@ cari_elemen = cari_elemen[0]
 # print(cari_elemen)
 
 i = {}
-# baris = 0
+# barisss = 0
 for i in cari_elemen:
     # if baris == 0:
     # print(i.get_text())
