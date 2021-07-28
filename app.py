@@ -31,6 +31,7 @@ for waktu in cari_elemen:
         sholat['isya'] = waktu.get_text()
     i += 1
 print(sholat)
+print(sholat['ashar'])
 
 
 
