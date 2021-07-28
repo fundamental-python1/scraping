@@ -9,13 +9,29 @@ cari_elemen = respon.find_all('tr', 'table_highlight')
 cari_elemen = cari_elemen[0]
 # print(cari_elemen)
 
-i = {}
-# barisss = 0
-for i in cari_elemen:
-    # if baris == 0:
-    # print(i.get_text())
-    i['kata'] = i.get_text()
-    print (i)
+# for i in cari_elemen:
+#     a = i.get_text()
+#     print(a)
+
+sholat = {}
+i = 0
+for waktu in cari_elemen:
+    # cari_elemen = cari_elemen.get_text()
+    if i == 0:
+        sholat ['Nomor'] = waktu.get_text()
+    elif i == 1:
+        sholat['Shubuh'] = waktu.get_text()
+    elif i == 2:
+        sholat['dhuhur'] = waktu.get_text()
+    elif i == 3:
+        sholat['ashar'] = waktu.get_text()
+    elif i == 4:
+        sholat['maghrib'] = waktu.get_text()
+    elif i == 5:
+        sholat['isya'] = waktu.get_text()
+    i += 1
+print(sholat)
+
 
 
 #a = {}
@@ -29,28 +45,3 @@ for i in cari_elemen:
 #     print(i,g)
 
 
-
-
-
-    # if kolom == 1:
-    #     a['subuh'] = daftar_waktu.get_text()
-    # elif kolom == 2:
-    #     a['dhuhur'] = daftar_waktu.get_text()
-    # elif kolom == 3:
-    #     a['ashar'] = daftar_waktu.get_text()
-    # elif kolom == 4:
-    #     a['maghrib'] = daftar_waktu.get_text()
-    # elif kolom == 1:
-    #     a['isya'] = daftar_waktu.get_text()
-    # kolom += 1
-   # print(a)
-
-
-#sholat = {}
-#a = 0
-#for b in cari_elemen:
-#    if a == 1:
-#        sholat['subuh'] = b.get_text()
-#    a += 1
-
-#print(sholat)
