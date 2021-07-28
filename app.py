@@ -17,9 +17,9 @@ sholat = {}
 i = 0
 for waktu in cari_elemen:
     # cari_elemen = cari_elemen.get_text()
-    if i == 0:
-        sholat ['Nomor'] = waktu.get_text()
-    elif i == 1:
+    # if i == 0:
+    #     sholat ['Nomor'] = waktu.get_text()
+    if i == 1:
         sholat['Shubuh'] = waktu.get_text()
     elif i == 2:
         sholat['dhuhur'] = waktu.get_text()
@@ -31,18 +31,32 @@ for waktu in cari_elemen:
         sholat['isya'] = waktu.get_text()
     i += 1
 print(sholat)
-print(sholat['ashar'])
+
+for nama_sholat, jam_sholat in sholat.items():
+    print (nama_sholat, 'pada jam', jam_sholat)
+# print(sholat['ashar'])
+
+#menggunakan enumerate
+# sholat = {}
+# i = 0
+# for i, waktu in enumerate(cari_elemen):
+#     # print(i, ':', waktu.get_text())
+#     if i == 0:
+#         sholat ['Nomor'] = waktu.get_text()
+#     elif i == 1:
+#         sholat['Shubuh'] = waktu.get_text()
+#     elif i == 2:
+#         sholat['dhuhur'] = waktu.get_text()
+#     elif i == 3:
+#         sholat['ashar'] = waktu.get_text()
+#     elif i == 4:
+#         sholat['maghrib'] = waktu.get_text()
+#     elif i == 5:
+#         sholat['isya'] = waktu.get_text()
+#
+# print(sholat)
 
 
 
-#a = {}
-#kolom = 0
-# for daftar_waktu, val in enumerate(cari_elemen):
-#     # a = daftar_waktu.get_text()
-#     print(daftar_waktu, val)
-
-# zz = ['s','d','f','g','h']
-# if i, g in enumerate(zz):
-#     print(i,g)
 
 
