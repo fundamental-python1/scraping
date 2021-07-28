@@ -56,7 +56,9 @@ for nama_sholat, jam_sholat in sholat.items():
 #
 # print(sholat)
 
-
+#reverse
+for i in reversed(range(1,11,1)):
+    print(i)
 
 
 
